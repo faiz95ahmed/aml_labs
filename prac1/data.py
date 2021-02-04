@@ -31,9 +31,9 @@ def to_torch_geom(g):
     features_np = np.zeros((num_nodes, 50))
     first_cycle = nx.find_cycle(g)
     if (len(first_cycle) == num_nodes):
-        label = torch.Tensor([1]*num_nodes)
+        label = torch.Tensor([1])
     else:
-        label = torch.Tensor([0]*num_nodes)
+        label = torch.Tensor([0])
     return GeomData(edge_index=edge_index, x=torch.Tensor(features_np), y=label)
     # return (edge_index, torch.Tensor(features_np), label)
 

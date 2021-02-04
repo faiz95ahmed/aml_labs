@@ -1,0 +1,18 @@
+Performance with Random Node Initialisation for different learning rates
+# 16 message passing layers
+epochs:  200, learning rate: 0.0002,                 average test performance: 0.8
+epochs:  240, learning rate: 0.0001548527344257647,  average test performance: 0.8364
+epochs:  320, learning rate: 0.00011989684587525715, average test performance: 0.9545
+epochs:  400, learning rate: 9.28317770640681e-05,   average test performance: 0.8727
+epochs:  520, learning rate: 7.187627346648503e-05,  average test performance: 0.8727
+epochs:  680, learning rate: 5.565118444575889e-05,  average test performance: 0.9545
+epochs:  920, learning rate: 4.308869072678182e-05,  average test performance: 0.9545
+epochs: 1160, learning rate: 3.336201059871004e-05,  average test performance: 0.9636
+epochs: 1520, learning rate: 2.5830992197253186e-05, average test performance: 0.9364
+epochs: 2000, learning rate: 2e-05,                  average test performance: 0.9636
+# 8 message passing layers
+epochs:  200, learning rate: 0.0002,                 average test performance: 0.7455
+epochs: 2000, learning rate: 2e-05,                  average test performance: 0.8545
+# 4 message passing layers
+epochs:  200, learning rate: 0.0002,                 average test performance: 0.6182
+epochs: 2000, learning rate: 2e-05,                  average test performance: 0.6545
