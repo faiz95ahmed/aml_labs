@@ -1,4 +1,8 @@
-Performance with Random Node Initialisation for different learning rates
+Without random node initialisation, the model gets an accuracy of 0.5
+
+Performance with Random Node Initialisation for different hyperparameters (num message passing layers, epochs, learning rate)
+
+Hyperparameters:
 # 16 message passing layers
 epochs:  200, learning rate: 0.0002,                 average test performance: 0.8
 epochs:  240, learning rate: 0.0001548527344257647,  average test performance: 0.8364
@@ -16,3 +20,7 @@ epochs: 2000, learning rate: 2e-05,                  average test performance: 0
 # 4 message passing layers
 epochs:  200, learning rate: 0.0002,                 average test performance: 0.6182
 epochs: 2000, learning rate: 2e-05,                  average test performance: 0.6545
+
+Obviously, this could be improved by varying epochs and learning rate seperately, but it takes too long to run on my machine (CPU only).
+
+Also, could try a wider range of values for 8 and 4 message passing layers, but again it takes quite long to run.
